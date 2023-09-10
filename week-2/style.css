@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eeeeee;
+}
+header .logo {
+  padding: 0.75rem;
+}
+header .menu {
+  display: flex;
+}
+header .menu li {
+  padding-right: 1rem;
+}
+@media (max-width: 800px) {
+  header .menu li {
+    display: none;
+  }
+}
+header .menu-btn {
+  display: none;
+}
+@media (max-width: 800px) {
+  header .menu-btn {
+    display: block;
+    padding-right: 1rem;
+  }
+  header .menu-btn i {
+    font-size: 1.5rem;
+    z-index: 10;
+  }
+}
+
+.asideMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: -1px 0 2px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.asideMenu ul li {
+  margin-bottom: 1.5rem;
+}
+
+.section-top {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ccddee;
+}
+.section-top .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-bottom .title {
+  margin: 2rem;
+}
+.section-bottom .content {
+  display: flex;
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+@media (min-width: 1200px) {
+  .section-bottom .content {
+    width: 1200px;
+  }
+}
+@media (max-width: 1199px) {
+  .section-bottom .content {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+}
+.section-bottom .content div {
+  background-color: #8899aa;
+  width: 49%;
+  height: 20vh;
+  margin-bottom: 2%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .section-bottom .content div {
+    width: 100%;
+  }
+}
+.section-bottom .content .hidden {
+  display: none;
+}
+.section-bottom button {
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  background-color: #ccddee;
+}/*# sourceMappingURL=style.css.map */
