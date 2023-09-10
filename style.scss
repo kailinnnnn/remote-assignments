@@ -22,14 +22,14 @@ header {
     display: flex;
     li {
       padding-right: 1rem;
-      @media (max-width: 500px) {
+      @media (max-width: 800px) {
         display: none;
       }
     }
   }
   .menu-btn {
     display: none;
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       display: block;
       padding-right: 1rem;
       i {
