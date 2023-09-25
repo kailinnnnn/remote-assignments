@@ -1,24 +1,13 @@
-import React, { useState } from "react";
-import Header from "./component/Header";
-import Main from "./component/Main";
-import "./styles/style.css";
+import React from "react";
+import Homepage from "./pages/homepage";
+import { Routes, Route } from "react-router-dom";
 
-const App = () => {
-  const [title, setTitle] = useState("Welcome Message");
-  const [asideMenu, setAsideMenu] = useState(false);
-  const [hiddenBox, setHiddenBox] = useState(true);
-
+function App() {
   return (
     <div className="app">
-      <Header asideMenu={asideMenu} setAsideMenu={setAsideMenu} />
-      <Main
-        title={title}
-        setTitle={setTitle}
-        hiddenBox={hiddenBox}
-        setHiddenBox={setHiddenBox}
-      />
+      <Homepage />
     </div>
   );
-};
+}
 
 export default App;
